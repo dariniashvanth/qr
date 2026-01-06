@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR Code Generated</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h1 class="logo">QR Generator</h1>
+</nav>
+
+
+<div class="center-container">
+
+  <h1>QR Generated!</h1>
+  <p>Your QR code is ready.</p>
+
+  <img src="<%= datapass %>" alt="QR Code" class="generated-qr">
+
+  <div class="button-row">
+    <a href="<%= datapass %>" download="qr-code.png">
+      <button class="primary-btn">Download QR Code</button>
+    </a>
+    <a href="/">
+      <button class="primary-btn">Generate Another</button>
+    </a>
+  </div>
+
+</div>
+
+</body>
+</html>

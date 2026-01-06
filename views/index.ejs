@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR Code Generator</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h1 class="logo">QR Generator</h1>
+</nav>
+
+<div class="container">
+
+
+  <div class="left">
+    <form action="/thankyou" method="post">
+
+      <h3><b>Step 1:</b> Add Text or URL</h3>
+      <textarea name="textareatag" placeholder="Enter text or URL" required></textarea>
+
+      <h3><b>Step 2:</b> Select Colors</h3>
+      <div class="color-row">
+        <div class="color-group">
+          <label>QR Color</label>
+          <input type="color" name="qrColor" value="#000000">
+        </div>
+        <div class="color-group">
+          <label>Background Color</label>
+          <input type="color" name="bgColor" value="#ffffff">
+        </div>
+      </div>
+
+      <h3><b>Step 3:</b> Select Size</h3>
+      <select name="size">
+        <option value="small">Small</option>
+        <option value="medium" selected>Medium</option>
+        <option value="large">Large</option>
+      </select>
+
+      <button type="submit" class="primary-btn">Generate QR Code</button>
+    </form>
+  </div>
+
+ 
+  <div class="right">
+    <img src="/images/Capture.png" alt="Dummy QR">
+  </div>
+
+</div>
+
+</body>
+</html>
